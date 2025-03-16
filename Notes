@@ -1,0 +1,5 @@
+1. Sleep disorder is not equal to insomnia. 
+We have to create a target variable for insomnia using sleep disorder, sleep quality, and sleep duration.
+
+2. There are a lot of categorical features, some with string values while others are numerical. 
+Have to preprocess these before visualizing.
