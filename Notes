@@ -3,3 +3,11 @@ We have to create a target variable for insomnia using sleep disorder, sleep qua
 
 2. There are a lot of categorical features, some with string values while others are numerical. 
 Have to preprocess these before visualizing.
+
+3. Create BMI feature with height and weight?
+
+4. Try XGBoost Classifier + SHAP, PCA. There are too many features. 
+
+5. Identify strongly correlated variables and use the most imp one. Use XGBoost. XGBoost is non-linear.
+
+6. Sleep quality, although categorical, is a categorical feature.
