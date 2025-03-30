@@ -32,7 +32,7 @@ The American Academy of Sleep Medicine (AASM) and ICSD-3 (International Classifi
 
 Feature	Relevance to Insomnia:
 
-- Sleep disorder (Y/N)	Captures reported sleep issues, though not specific to insomnia. This should be our starting filter.
+- Sleep disorder (Y/N)	Captures reported sleep issues, though not specific to insomnia. So cannot use it as a reliable 1st filter for insomnia.
 - Sleep duration	Less than 6 hours is considered insufficient sleep.
 - Sleep quality (1-5)	1-2 = Poor quality, indicating difficulty staying asleep.
 - Wake up during night (Y/N)	Frequent awakenings indicate sleep maintenance insomnia.
@@ -40,7 +40,7 @@ Feature	Relevance to Insomnia:
 
 Proposed Insomnia Labeling Rule for our Dataset:
 
-We define insomnia = 1 if ALL conditions are met:
+We define insomnia = 1 if the person has at least 3 of the 5 conditions are met:
 
 	1.	Sleep disorder = “Y”
 	2.	Sleep duration < 6 hours
