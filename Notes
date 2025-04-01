@@ -12,6 +12,10 @@ Have to preprocess these before visualizing.
 
 6. Sleep quality, although categorical, is a categorical feature.
 
+7. Check the naive baseline accuracy (i.e., the distribution of the target variable)
+
+8. While splitting the data, try to preserve the class imbalance.
+
 
 Approach to project:
 
