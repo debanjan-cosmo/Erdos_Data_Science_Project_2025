@@ -73,3 +73,25 @@ Joint Approaches:
  	•	Multivariate Classification: We could treat both insomnia and DED as multi-class targets or multi-label classification, where we’re predicting both conditions at once. This would directly model the joint relationship without first separating it into individual binary problems.
 	•	Causal Inference: Can be used to understand how one condition (e.g., insomnia) influences the other (e.g., DED), adjusting for other features. Can explore methods like propensity score matching, instrumental variable analysis, or structural equation modeling (SEM). This approach doesn’t require the binary classification steps, but it does require a clear understanding of how each feature might affect both conditions and how to control for confounding factors.
 	•	Unsupervised Learning: To identify natural clusters of patients with similar characteristics (for example, groups with both DED and insomnia, or groups with other combinations of the conditions), unsupervised learning like k-means clustering or hierarchical clustering could be a done. This would not rely on predicting outcomes but rather on finding patterns or structures in the data. I think this is important for the project since we're trying to study the interdependencies between DED and insomnia. While doing this, drop the targets and use them for post analysis.
+
+What’s the Best Accuracy You Can Get?
+
+You can estimate it with:
+
+a) Learning Curves
+
+Plot training and cross-validation accuracy for increasing sizes of training data. If both are low → underfitting; if training high & val low → overfitting.
+
+b) Model Stacking / Ensembling
+
+Try ensemble methods (stacking, voting classifiers) and see if combining models improves performance.
+
+c) Upper Bound Estimation
+
+Try a powerful model like XGBoost, CatBoost, or even a neural net. If they all cap out around the same accuracy (~0.68–0.72), the problem might be:
+
+	•	Data quality or feature set isn’t rich enough
+	•	Feature engineering needs to improve
+	•	Classes are overlapping too much
+
+You can also do permutation-based feature importance to see which features actually contribute.
