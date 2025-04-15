@@ -93,14 +93,22 @@ feature_to_category = {
 
 
 # Define category-color mapping
-category_colors = {
-    "Demographics": "#1f77b4",        # blue
-    "Health_Lifestyle": "#ff7f0e",    # orange
-    "Substance_Use": "#2ca02c",       # green
-    "Device_Screen_Use": "#d62728",   # red
-    "Eye_Health_Symptoms": "#9467bd"  # purple
-}
+# category_colors = {
+#     "Demographics": "#1f77b4",        # blue
+#     "Health_Lifestyle": "#ff7f0e",    # orange
+#     "Substance_Use": "#2ca02c",       # green
+#     "Device_Screen_Use": "#d62728",   # red
+#     "Eye_Health_Symptoms": "#9467bd"  # purple
+# }
 
+
+category_colors = {
+    "Demographics": (0.12156862745098039, 0.4666666666666667, 0.7058823529411765),  # blue
+    "Health_Lifestyle": (1.0, 0.5, 0.0),  # orange
+    "Substance_Use": (0.15294117647058825, 0.6823529411764706, 0.3764705882352941),  # green
+    "Device_Screen_Use": (0.8392156862745098, 0.15294117647058825, 0.1568627450980392),  # red
+    "Eye_Health_Symptoms": (0.5803921568627451, 0.403921568627451, 0.7411764705882353)  # purple
+}
 
 
 ### Below is a function for generating lists of features present in the dataset:
