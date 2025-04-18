@@ -46,5 +46,12 @@ def remove_objects_from_list(data_list, objects_to_remove):
 
     return data_list
 
+def format_sci_notation(val):
+    if np.isnan(val):
+        return ""
+    exponent = int(np.floor(np.log10(abs(val)))) if val != 0 else 0
+    base = val / 10**exponent if val != 0 else 0
+    return r"${:.2f} \times 10^{{{}}}$".format(base, exponent)
+
 
 
