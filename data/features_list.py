@@ -77,10 +77,11 @@ category_map = {
     ],
     "Eye_Health_Symptoms": [
         'discomfort_eye-strain', 'redness_in_eye', 'itchiness/irritation_in_eye'
-    ],
-    "Sleep_Issues": [
-        'sleep_duration', 'sleep_quality', 'wake_up_during_night', 'feel_sleepy_during_day'
     ]
+    # ,
+    # "Sleep_Issues": [
+    #     'sleep_duration', 'sleep_quality', 'wake_up_during_night', 'feel_sleepy_during_day'
+    # ]
 }
 
 # Map each feature to a category
@@ -91,9 +92,9 @@ feature_to_category = {
     'medical_issue': 'Health_Lifestyle', 'ongoing_medication': 'Health_Lifestyle',
     'caffeine_consumption': 'Substance_Use', 'alcohol_consumption': 'Substance_Use', 'smoking': 'Substance_Use',
     'smart_device_before_bed': 'Device_Screen_Use', 'average_screen_time': 'Device_Screen_Use', 'blue-light_filter': 'Device_Screen_Use',
-    'discomfort_eye-strain': 'Eye_Health_Symptoms', 'redness_in_eye': 'Eye_Health_Symptoms', 'itchiness/irritation_in_eye': 'Eye_Health_Symptoms',
-    'sleep_duration': 'Sleep_Issues', 'sleep_quality': 'Sleep_Issues', 'wake_up_during_night': 'Sleep_Issues',
-    'feel_sleepy_during_day': 'Sleep_Issues'
+    'discomfort_eye-strain': 'Eye_Health_Symptoms', 'redness_in_eye': 'Eye_Health_Symptoms', 'itchiness/irritation_in_eye': 'Eye_Health_Symptoms'
+    # 'sleep_duration': 'Sleep_Issues', 'sleep_quality': 'Sleep_Issues', 'wake_up_during_night': 'Sleep_Issues',
+    # 'feel_sleepy_during_day': 'Sleep_Issues'
 }
 
 
@@ -112,8 +113,8 @@ category_colors = {
     "Health_Lifestyle": (1.0, 0.5, 0.0),  # orange
     "Substance_Use": (0.15294117647058825, 0.6823529411764706, 0.3764705882352941),  # green
     "Device_Screen_Use": (0.8392156862745098, 0.15294117647058825, 0.1568627450980392),  # red
-    "Eye_Health_Symptoms": (0.5803921568627451, 0.403921568627451, 0.7411764705882353),  # purple
-    "Sleep_Issues": (0.957, 0.263, 0.812)  # fuschia
+    "Eye_Health_Symptoms": (0.5803921568627451, 0.403921568627451, 0.7411764705882353)  # purple
+    # "Sleep_Issues": (0.957, 0.263, 0.812)  # fuschia
 }
 
 
