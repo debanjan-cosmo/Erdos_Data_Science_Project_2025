@@ -91,3 +91,28 @@ Our findings underscore a **strong bidirectional relationship** between eye heal
 - Medical researchers  
 - Policy makers  
 - Individuals impacted by DED or sleep disorders  
+
+---
+
+## 🛠️ Dependencies
+
+The project uses the following Python libraries:
+
+
+- [XGBoost](https://xgboost.readthedocs.io/en/stable/)  
+- [Scikit-Learn](https://scikit-learn.org/stable/)  
+- [Pandas](https://pandas.pydata.org/)  
+- [NumPy](https://numpy.org/)  
+- [Matplotlib](https://matplotlib.org/)  
+- [Seaborn](https://seaborn.pydata.org/)  
+- [KaggleHub](https://github.com/Kaggle/kagglehub)  
+- [SHAP (SHapley Additive exPlanations)](https://shap.readthedocs.io/en/latest/) 
+
+---
+
+### 📦 Installation
+
+Install all dependencies using:
+
+```bash
+pip install -r requirements.txt
