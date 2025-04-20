@@ -2,7 +2,7 @@
 
 **Team**: [Debanjan Sarkar](https://github.com/debanjan-cosmo), [Anwesha Basu](https://github.com/AnweshaB12)  
 **GitHub Repository**: [Erdos_Data_Science_Project_2025](https://github.com/debanjan-cosmo/Erdos_Data_Science_Project_2025)  
-**Dataset**: *Dry Eye Disease Dataset* (sourced from Kaggle)
+**Dataset**: *Dry Eye Disease Dataset* (sourced from [Kaggle](https://www.kaggle.com/datasets/dakshnagra/dry-eye-disease/data))
 
 ---
 
