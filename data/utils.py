@@ -9,12 +9,24 @@ sns.set_theme(style="ticks", context="talk", palette="husl", font="sans-serif", 
 
 # Function to prettify column names
 def prettify_colname(colname):
-    return colname.replace('_', ' ').title()
+    if colname.upper() == 'BP_CATEGORY':
+        return 'BP Category'
+    elif colname.upper() == 'BMI':
+        return 'BMI'
+    else:
+        return colname.replace('_', ' ').title()
 
 #Change ticks fonts
 def format_xticklabels(ax):
-    labels = [t.get_text().title().replace('_', ' ') for t in ax.get_xticklabels()]
-    
+    labels = []
+    for tick in ax.get_xticklabels():
+        text = tick.get_text()
+        if text.upper() == 'BP_CATEGORY':
+            labels.append('BP Category')
+        elif text.upper() == 'BMI':
+            labels.append('BMI')
+        else:
+            labels.append(text.upper().replace('_', ' ').title())
 
     # Get the current tick locations
     locs = ax.get_xticks()
@@ -23,12 +35,21 @@ def format_xticklabels(ax):
     ax.set_xticklabels(labels) # set the x tick labels
     
 def format_yticklabels(ax):
-    labels = [t.get_text().title().replace('_', ' ') for t in ax.get_yticklabels()]
+    labels = []
+    for tick in ax.get_xticklabels():
+        text = tick.get_text()
+        if text.upper() == 'BP_CATEGORY':
+            labels.append('BP Category')
+        elif text.upper() == 'BMI':
+            labels.append('BMI')
+        else:
+            labels.append(text.upper().replace('_', ' ').title())
+
     # Get the current tick locations
-    locs = ax.get_yticks()
+    locs = ax.get_xticks()
     # Set the new tick locations and labels
-    ax.set_yticks(locs, labels)
-    ax.set_yticklabels(labels) # set the x tick labels
+    ax.set_xticks(locs, labels)
+    ax.set_xticklabels(labels) # set the y tick labels
 
 
 def remove_objects_from_list(data_list, objects_to_remove):
@@ -52,6 +73,14 @@ def format_sci_notation(val):
     exponent = int(np.floor(np.log10(abs(val)))) if val != 0 else 0
     base = val / 10**exponent if val != 0 else 0
     return r"${:.2f} \times 10^{{{}}}$".format(base, exponent)
+
+def format_feature_name(feat):
+        if feat == "bp_category":
+            return "BP Category"
+        elif feat == "bmi":
+            return "BMI"
+        else:
+            return feat.replace('_', ' ').title()
 
 
 

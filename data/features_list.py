@@ -8,6 +8,7 @@ feature_list = ['gender',
                 'physical_activity',
                 'height',
                 'weight',
+                'bmi',
                 'sleep_disorder',
                 'wake_up_during_night',
                 'feel_sleepy_during_day',
@@ -37,6 +38,8 @@ features_for_insomnia = ['sleep_disorder',
                          'feel_sleepy_during_day',
                          'wake_up_during_night']
 
+features_for_bmi = ['weight','height']
+
 
 refined_list = ['gender',
                 'age',
@@ -44,8 +47,7 @@ refined_list = ['gender',
                 'heart_rate',
                 'daily_steps',
                 'physical_activity',
-                'height',
-                'weight',
+                'bmi',
                 'caffeine_consumption',
                 'alcohol_consumption',
                 'smoking',
@@ -63,58 +65,40 @@ refined_list = ['gender',
 # Map each feature to a category
 category_map = {
     "Demographics": [
-        'gender', 'age', 'height', 'weight'
+        'gender', 'age', 'bmi'
     ],
     "Health_Lifestyle": [
         'stress_level', 'heart_rate', 'daily_steps', 'physical_activity', 'bp_category',
         'medical_issue', 'ongoing_medication'
     ],
-    "Substance_Use": [
+    "Consumption_Habits": [
         'caffeine_consumption', 'alcohol_consumption', 'smoking'
     ],
-    "Device_Screen_Use": [
+    "Device_Use": [
         'smart_device_before_bed', 'average_screen_time', 'blue-light_filter'
     ],
-    "Eye_Health_Symptoms": [
-        'discomfort_eye-strain', 'redness_in_eye', 'itchiness/irritation_in_eye'
-    ]
-    # ,
-    # "Sleep_Issues": [
-    #     'sleep_duration', 'sleep_quality', 'wake_up_during_night', 'feel_sleepy_during_day'
-    # ]
+    "Ocular_Surface_Symptoms": [
+        'discomfort_eye-strain', 'redness_in_eye', 'itchiness/irritation_in_eye']
 }
 
 # Map each feature to a category
 feature_to_category = {
-    'gender': 'Demographics', 'age': 'Demographics', 'height': 'Demographics', 'weight': 'Demographics',
+    'gender': 'Demographics', 'age': 'Demographics', 'bmi': 'Demographics',
     'stress_level': 'Health_Lifestyle', 'heart_rate': 'Health_Lifestyle', 'daily_steps': 'Health_Lifestyle',
     'physical_activity': 'Health_Lifestyle', 'bp_category': 'Health_Lifestyle',
     'medical_issue': 'Health_Lifestyle', 'ongoing_medication': 'Health_Lifestyle',
-    'caffeine_consumption': 'Substance_Use', 'alcohol_consumption': 'Substance_Use', 'smoking': 'Substance_Use',
-    'smart_device_before_bed': 'Device_Screen_Use', 'average_screen_time': 'Device_Screen_Use', 'blue-light_filter': 'Device_Screen_Use',
-    'discomfort_eye-strain': 'Eye_Health_Symptoms', 'redness_in_eye': 'Eye_Health_Symptoms', 'itchiness/irritation_in_eye': 'Eye_Health_Symptoms'
-    # 'sleep_duration': 'Sleep_Issues', 'sleep_quality': 'Sleep_Issues', 'wake_up_during_night': 'Sleep_Issues',
-    # 'feel_sleepy_during_day': 'Sleep_Issues'
+    'caffeine_consumption': 'Consumption_Habits', 'alcohol_consumption': 'Consumption_Habits', 'smoking': 'Consumption_Habits',
+    'smart_device_before_bed': 'Device_Use', 'average_screen_time': 'Device_Use', 'blue-light_filter': 'Device_Use',
+    'discomfort_eye-strain': 'Ocular_Surface_Symptoms', 'redness_in_eye': 'Ocular_Surface_Symptoms', 'itchiness/irritation_in_eye': 'Ocular_Surface_Symptoms'
 }
-
-
-# Define category-color mapping
-# category_colors = {
-#     "Demographics": "#1f77b4",        # blue
-#     "Health_Lifestyle": "#ff7f0e",    # orange
-#     "Substance_Use": "#2ca02c",       # green
-#     "Device_Screen_Use": "#d62728",   # red
-#     "Eye_Health_Symptoms": "#9467bd"  # purple
-# }
 
 
 category_colors = {
     "Demographics": (0.12156862745098039, 0.4666666666666667, 0.7058823529411765),  # blue
     "Health_Lifestyle": (1.0, 0.5, 0.0),  # orange
-    "Substance_Use": (0.15294117647058825, 0.6823529411764706, 0.3764705882352941),  # green
-    "Device_Screen_Use": (0.8392156862745098, 0.15294117647058825, 0.1568627450980392),  # red
-    "Eye_Health_Symptoms": (0.5803921568627451, 0.403921568627451, 0.7411764705882353)  # purple
-    # "Sleep_Issues": (0.957, 0.263, 0.812)  # fuschia
+    "Consumption_Habits": (0.15294117647058825, 0.6823529411764706, 0.3764705882352941),  # green
+    "Device_Use": (0.8392156862745098, 0.15294117647058825, 0.1568627450980392),  # red
+    "Ocular_Surface_Symptoms": (0.5803921568627451, 0.403921568627451, 0.7411764705882353)  # purple
 }
 
 
