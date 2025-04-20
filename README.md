@@ -1,5 +1,3 @@
-Here’s the README.md content with proper Markdown formatting—headings, bullet points, and clickable links:
-
 # 🧠 Machine Learning Insights into Dry Eyes and Sleepless Nights
 
 **Team**: [Debanjan Sarkar](https://github.com/debanjan-cosmo), [Anwesha Basu](https://github.com/AnweshaB12)  
