@@ -91,5 +91,3 @@ Our findings underscore a **strong bidirectional relationship** between eye heal
 - Medical researchers  
 - Policy makers  
 - Individuals impacted by DED or sleep disorders  
-
-You can copy-paste this into your repository’s README.md file. Let me know if you want help creating a visual README with badges or diagrams!
