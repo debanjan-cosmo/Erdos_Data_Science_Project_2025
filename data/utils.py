@@ -52,6 +52,7 @@ def format_yticklabels(ax):
     ax.set_xticklabels(labels) # set the y tick labels
 
 
+#Object to remove from list
 def remove_objects_from_list(data_list, objects_to_remove):
     """
     Removes all occurrences of specified objects from a list.
@@ -67,6 +68,7 @@ def remove_objects_from_list(data_list, objects_to_remove):
 
     return data_list
 
+# Format numerical output
 def format_sci_notation(val):
     if np.isnan(val):
         return ""
@@ -74,6 +76,8 @@ def format_sci_notation(val):
     base = val / 10**exponent if val != 0 else 0
     return r"${:.2f} \times 10^{{{}}}$".format(base, exponent)
 
+
+#Format Feature Names
 def format_feature_name(feat):
         if feat == "bp_category":
             return "BP Category"
