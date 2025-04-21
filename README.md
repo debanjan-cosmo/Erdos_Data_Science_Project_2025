@@ -115,8 +115,8 @@ Based on performance, we shortlisted **Gradient Boosting**, **Random Forest**, a
 Our findings underscore a **strong bidirectional relationship** between eye health and sleep health. These insights highlight the need for **integrated clinical assessments** that consider both conditions together.
 
 ### Future Work:
-- Expand the dataset with more detailed behavioral and environmental features  
-- Validate insights against real-world clinical or longitudinal datasets  
+- Try more interpretable models or even deep learning for better performance.
+- Explore more data — especially on stress, environmental factors, and country based. 
 
 ---
 
@@ -126,6 +126,45 @@ Our findings underscore a **strong bidirectional relationship** between eye heal
 - Medical researchers  
 - Policy makers  
 - Individuals impacted by DED or sleep disorders  
+
+---
+
+### Repository Structure
+
+### `Data/`
+Contains all the datasets and helper scripts for feature engineering and preprocessing.
+
+- **dry_eye_disease_rawfile.csv**: Raw data containing unprocessed information.
+- **dry_eye_disease_parsed.csv**: Cleaned and structured version of the raw data.
+- **features_list.py**: Defines subsets of features used for model training and evaluation.
+- **model_params.py**: Stores hyperparameter settings and functions for various models.
+- **utils.py**: Utility functions for data handling and preprocessing.
+
+---
+
+### `Exploration/`
+Notebooks focused on data exploration and understanding.
+
+- **01_Data_Parsing.ipynb**: Parses the raw dataset and performs initial data cleaning.
+- **02_visualize_numerical_and_categorical_data.ipynb**: Visualization of distributions for numerical and categorical features.
+- **03_determine_outliers.ipynb**: Outlier detection using statistical methods and visual inspection.
+- **03_visualize_conditional_box_plots.ipynb**: Conditional boxplots comparing distributions across categories and comorbidities.
+
+---
+
+### `Modelling/`
+Machine learning workflows for classifying DED, insomnia, and combined conditions.
+
+- **01_Using_Multiple_Methods.ipynb**: Applies several classification algorithms and compares their performance.
+- **02_Hyper_Parameter_Tuning.ipynb**: Hyperparameter optimization using grid search and cross-validation.
+- **03a_Classifying_DED.ipynb**: Main notebook for classifying Dry Eye Disease and interpreting model results.
+- **03b_Classifying_Insomnia.ipynb**: Applies similar techniques to classify insomnia.
+- **03c_Classifying_Combined_Condition.ipynb**: Joint classification of DED and insomnia as a comorbid condition.
+
+---
+
+### `Figures/`
+Contains some plots and figures generated during EDA and modeling.
 
 ---
 
