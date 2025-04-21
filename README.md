@@ -34,9 +34,9 @@ The dataset includes a wide range of features—from demographics and health hab
 
 ---
 
-## Modeling Approach
+## Modelling Approach
 
-We began with exploratory data analysis (EDA) to uncover distributions, patterns, and relationships among features and target labels (DED, insomnia, and both). The data was split into **80% training** and **20% testing**, with part of the training set reserved for cross-validation.
+We began with exploratory data analysis (EDA) to uncover distributions, patterns, and relationships among features and target labels (DED, insomnia, and both). The data was split into **80% training**(**20%** of which was used for **cross-validation**) and **20% testing**, with part of the training set reserved for cross-validation.
 
 After benchmarking with baseline models (mean and random classifiers), we trained and compared multiple algorithms including:
 
